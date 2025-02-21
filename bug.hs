@@ -1,0 +1,1 @@
+This Haskell code suffers from a space leak because of the `deepseq` import.  The `deepseq` package forces evaluation of data structures, but can inadvertently prevent garbage collection if used incorrectly. In this example, the `force` function uses `deepseq` to ensure evaluation of the list, but fails to ensure the list is collected after processing.
