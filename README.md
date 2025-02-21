@@ -1,0 +1,1 @@
+This repository demonstrates a common space leak in Haskell programs that arise from the misuse of the `deepseq` package.  The `bug.hs` file contains code that produces a space leak, and `bugSolution.hs` provides a corrected version.
